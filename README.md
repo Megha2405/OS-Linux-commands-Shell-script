@@ -24,10 +24,7 @@ Testing the commands for the desired output.
 ### Create the following files file1, file2 as follows:
 cat > file1
 ```
-chanchal singhvi
-c.k. shukla
-s.n. dasgupta
-sumit chakrobarty
+d
 ^d
 ```
 cat > file2
@@ -42,7 +39,7 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+![catfile1](./img/01-cat-file1.pngs)
 
 
 cat < file2
