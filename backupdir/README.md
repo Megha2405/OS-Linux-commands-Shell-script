@@ -49,14 +49,14 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- ![catfile3](./img/cat-file3.png)
+ 
 comm file1 file2
  ## OUTPUT
-![catfile4](./img/04-cat-file4.png)
+
  
 diff file1 file2
 ## OUTPUT
-![catfile5](./img/05-cat-file5.png)
+
 
 #Filters
 
@@ -79,18 +79,18 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-![catfile6](./img/06-cat-file6.png)
+
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-![catfile7](./img/07-cat-file7.png)
+
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![catfile8](./img/08-cat-file8.png)
+
 
 cat < newfile 
 ```
@@ -101,44 +101,43 @@ hello world
 cat > newfile 
 Hello world
 hello world
-```
  
 grep Hello newfile 
 ## OUTPUT
-![catfile9](./img/09-cat-file9.png)
+
 
 
 grep hello newfile 
 ## OUTPUT
-![catfile10](./img/10-cat-file10.png)
+
 
 
 
 grep -v hello newfile 
 ## OUTPUT
-![catfile11](./img/11-cat-file11.png)
+
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-![catfile12](./img/12-cat-file12.png)
+
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-![catfile13](./img/13-cat-file13.png)
+
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-![catfile14](./img/14-cat-file14.png)
+
 
 
 grep -w -n world newfile   
 ## OUTPUT
-![catfile15](./img/15-cat-file15.png)
+
 
 cat < newfile 
 ```
@@ -161,60 +160,59 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-![catfile16](./img/16-cat-file16.png)
+
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-![catfile17](./img/17-cat-file17.png)
+
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-![catfile18](./img/18-cat-file18.png)
+
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-![catfile19](./img/19-cat-file19.png)
+
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-![catfile20](./img/20-cat-file20.png)
+
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-![catfile21](./img/21-cat-file21.png)
+
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-![catfile22](./img/22-cat-file22.png)
+
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-![catfile23](./img/23-cat-file.png)
+
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-![catfiles24](./img/23-cat-file23.png)
+
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-![catfiless24](./img/24-cat-file24.png)
+
 
 egrep l{2} newfile
 ## OUTPUT
-![catfiles25](./img/25-cat-file25.png)
+
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-![catfile27](./img/27-cat-file27.png)
 
 
 cat > file23
@@ -233,76 +231,76 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-![catfile28](./img/28-cat-file28.png)
+
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-![catfile29](./img/29-cat-file29.png)
+
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-![catfile30](./img/30-cat-file30.png)
+
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-![catfile31](./img/31-cat-file31.png)
+
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-![catfile32](./img/32-cat-file32.png)
+
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-![catfile33](./img/33-cat-files33.png)
+
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-![catfiles34](./img/34-cat-file34.png)
+
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-![catfiles35](./img/35-%20cat-files35.png)
+
 
 
 seq 10 
 ## OUTPUT
-![catfile36](./img/36-cat-file36.png)
+
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-![catfile37](./img/37-cat-file37.png)
+
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-![catfiles38](./img/38-cat-file38.png)
+
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-![catfiles39](./img/39-cat-file39.png)
+
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-![catfile40](./img/40-cat-file40.png)
+
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-![catfile41](./img/41-cat-file41.png)
+
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-![catfile42](./img/42-cat-file42.png)
+
 
 
 sed -n '2,4{s/$/*/;p}' file23
@@ -319,7 +317,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-![catfile43](./img/42-cat-files42.png)
+
 
 cat > file22
 ```
@@ -332,14 +330,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-![catfile44](./img/44-cat-file44.png)
+
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-![catfile45](./img/45-cat-file45.png)
+
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -355,18 +353,18 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-![catfiles](./img/48-cat-file48.png)
+
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![catfiles](./img/50-cat-file50.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![catfile](./img/51-cat-file51.png)
+
 
 mkdir backupdir
  
@@ -376,11 +374,11 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![catfile](./img/52-cat-file52.png)
+
 
 tar -xvf backup.tar
 ## OUTPUT
-![catfile](./img/52-cat-file53.png)
+
 gzip backup.tar
 
 ls .gz
