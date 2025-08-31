@@ -387,10 +387,10 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+![catfile](./img/ex01-cat-file37.png)
 gunzip backup.tar.gz
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file38.png)
  
 # Shell Script
 ```
@@ -502,13 +502,13 @@ fi
 ```
 ##OUTPUT
 
-
+![catfile](./img/ex01-cat-file7.png)
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file8.png)
 
 # check file ownership
 cat < psswdperm.sh 
@@ -535,6 +535,8 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![catfile](./img/ex01-cat-file9.png)
+![catfile](./img/ex01-cat-file10.png)
 
 # check if with file location
 cat>ifnested.sh 
@@ -581,7 +583,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file11.png)
 
 
 # using numeric test comparisons
@@ -625,7 +627,7 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
-
+![catfile](./img/ex01-cat-file12.png)
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -673,8 +675,8 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
-
+## output
+![catfile](./img/ex01-cat-file14.png)
 # looking for a possible value using elif
 cat elifcheck.sh 
 ```bash
@@ -702,7 +704,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file15.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -718,7 +720,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file16.png)
 # using the case command
 cat >casecheck.sh 
 ```bash
@@ -738,6 +740,9 @@ $ chmod 755 casecheck.sh
  
 $ ./casecheck.sh 
  
+## output
+![catfile](./img/ex01-cat-file17.png) 
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -752,8 +757,10 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
- 
+
+## output
+![catfile](./img/Screenshot%20at%202025-08-31%2010-47-12.png)
+
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -763,10 +770,10 @@ do
 echo $var1
 var1=$[ $var1 - 25 ]
 done
-``` 
-$ chmod 755 untiltest.sh
- 
- 
+```
+ $ chmod 755 untiltest.sh
+## output
+![catfile](./img/ex01-cat-file18.png)
  
 cat forin1.sh 
 ```bash
@@ -776,12 +783,15 @@ for test in Alabama Alaska Arizona Arkansas California Colorado
 do
 echo The next state is $test
 done
- ```
- 
+```
 $ chmod 755 forin1.sh
- 
- 
-cat forin2.sh 
+$ ./forin1.sh
+## output:
+![catfile](./img/ex01-cat-file19.png)
+
+
+ cat forin2.sh 
+
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -793,7 +803,7 @@ done
  
 $ chmod 755 forin2.sh
  
-cat forin2.sh 
+$ cat forin2.sh 
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -805,6 +815,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+## output:
+![catfile](./img/ex01-cat-file20.png)
  
 cat forin3.sh 
 ```bash
@@ -815,9 +827,14 @@ do
 echo "word:$test"
 done
 ```
-$ ./forin3.sh 
+$ chmod 755 ./forin3
+$./forin3.sh 
+## output:
+![catfile](./img/ex01-caat-file21.png)
+
  
-cat forin1.sh 
+$ cat forin1.sh 
+$ cat > forin1.sh
 ```bash
 #!/bin/bash
 # basic for command
@@ -827,8 +844,12 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
+$ ./forin1.sh
+
 
 ## OUTPUT
+![catfile](./img/ex01-cat-file22.png)
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -850,7 +871,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file24.png)
 
 cat forctype.sh 
 ```bash
@@ -863,7 +884,7 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
-## OUTPUT
+
 
 cat forctype1.sh 
 ```bash
@@ -877,6 +898,8 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![catfile](./img/ex01-cat-file25.png)
+
 
 cat fornested1.sh 
 ```bash
@@ -895,7 +918,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![catfile](./img/ex01-cat-file26.png)
  
 cat forbreak.sh 
 ```bash
@@ -911,13 +934,15 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
+ $ ./forbreak.sh 
+
+## OUTPUT
+![catfile](./img/ex01-cat-file27.png)
+
+
  
-$ ./forbreak.sh 
- 
-cat forbreak.sh 
+cat > forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -937,7 +962,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
+ ![catfile](./img/ex01-cat-file28.png)
+
 cat exread.sh 
 ```bash
 #!/bin/bash
@@ -961,12 +987,12 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-
+$ ./exread1.sh
 ## OUTPUT
+![catfile](./img/ex01-cat-file29.png)
 
 
 
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -984,11 +1010,9 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
- ./funcex.sh 
-
- 
- ./funcex.sh 1 2
-
+![catfile](./img/ex01-cat-file30.png)
+./funcex.sh 1 2
+![catfile](./img/ex01-cat-file31.png)
  
 cat argshift.sh
 ```bash
@@ -1000,8 +1024,9 @@ done
 ```
 $ chmod 777 argshift.sh
 
-## OUTPUT
 $ ./argshift.sh 1 2 3
+## output:
+![catfile](./img/ex01-cat-file32.png)
  
  cat argshift1.sh
 ```bash
@@ -1016,11 +1041,12 @@ for (( i=0;i<$ELEMENTS;i++)); do
     echo ${args[${i}]} 
 done
 ```
-$ chmod 777 argshift.sh
+$ chmod 777 argshift1.sh
+$ ./argshift1.sh 1 2 3
 ## OUTPUT
-$ ./argshift.sh 1 2 3
+![catfile](./img/ex01-cat-file33.png)
  
-cat argshift.sh
+cat > argshift3.sh
 ```bash
 #!/bin/bash 
 set -x 
@@ -1030,8 +1056,9 @@ while (( "$#" )); do
 done
 set +x
 ```
-## OUTPUT
  ./argshift.sh 1 2 3
+## OUTPUT
+![catfile](./img/ex01-cat-file34.png)
  
  
 cat > nc.awk
@@ -1063,6 +1090,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+![catfile](./img/ex01-cat-file35.png)
  
 cat > palindrome.sh
 ```bash
@@ -1090,7 +1118,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![catfile](./img/ex01-cat-file36.png)
 
 # RESULT:
 The Commands are executed successfully.
