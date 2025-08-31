@@ -382,6 +382,7 @@ tar -tvf backup.tar
 tar -xvf backup.tar
 ## OUTPUT
 ![catfile](./img/52-cat-file53.png)
+
 gzip backup.tar
 
 ls .gz
@@ -399,7 +400,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file1.png)
  
 cat << stop > herecheck.txt
 ```
@@ -411,7 +412,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file2.png)
 
 cat < scriptest.sh 
 ```bash
@@ -449,24 +450,26 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file3.png)
  
 ls file1
 ## OUTPUT
-
+![catfile](./img/ex01-cat-file4.png)
 echo $?
 ## OUTPUT 
+![catfile](./img/ex01-cat-file5.png)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+ ![catfile](./img/Screenshot%20at%202025-08-31%2010-08-33.png)
 abcd
  
 echo $?
  ## OUTPUT
-
+![catfile](./img/ex01-cat-file6.png)
 
  
 # mis-using string comparisons
